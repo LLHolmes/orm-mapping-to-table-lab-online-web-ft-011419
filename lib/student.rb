@@ -32,6 +32,7 @@ class Student
     VALUES (?, ?)
     SQL
     DB[:conn].execute(insert, self.name, self.grade)
+    @id = DB[:conn].execute("SELECT id FROM ")
   end
   
   def self.create
