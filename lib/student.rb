@@ -12,7 +12,9 @@ class Student
   end
   
   def self.create_table
-    table = DOC
+    table = <<-SQL
+      CREATE TABLE IF NOT EXIST
+    SQL
   end
 
   def self.drop_table
