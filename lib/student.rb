@@ -12,6 +12,7 @@ class Student
   end
   
   def self.create_table
+    table = DOC
   end
 
   def self.drop_table
