@@ -27,6 +27,10 @@ class Student
   end
   
   def save
+    insert = <<-SQL
+    INSERT
+    SQL
+    DB[:conn].execute()
   end
   
   def self.create
