@@ -6,6 +6,9 @@ class Student
   attr_reader :id
   
   def self.create_table(name, grade, id = nil)
+    @name = name
+    @grade = grade
+    @id = id
   end
 
   def self.drop_table
